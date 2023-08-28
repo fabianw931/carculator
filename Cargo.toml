@@ -1,0 +1,22 @@
+[package]
+name = "carculator"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6.20"
+google-sheets4 = "5.0.3"
+hyper = "^0.14"
+hyper-rustls = "^0.24.1"
+serde = "^1.0"
+serde_json = "^1.0"
+yup-oauth2 = "^8.3.0"
+tokio = { version = "~1.32.0", features = [
+    "macros",
+    "io-util",
+    "rt",
+    "rt-multi-thread",
+    "fs",
+] }
